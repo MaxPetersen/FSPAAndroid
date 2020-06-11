@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ToDoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/topCard"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="17dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cardTitle"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="11dp"
+                        android:text="@string/toDoTemp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/cardText"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/announcementText"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cardTitle"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:scaleX="1.7"
+                        android:scaleY="1.7"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/midCard"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="17dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="10dp"
+                android:layout_below="@+id/topCard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cardTitle1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="11dp"
+                        android:text="@string/toDoTemp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/cardText1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle1"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/announcementText"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cardTitle1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:scaleX="1.7"
+                        android:scaleY="1.7"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/botCard"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="17dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="10dp"
+                android:layout_below="@+id/midCard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cardTitle2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="11dp"
+                        android:text="@string/toDoTemp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/cardText2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle2"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/announcementText"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cardTitle2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:scaleX="1.7"
+                        android:scaleY="1.7"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lowCard"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="17dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="10dp"
+                android:layout_below="@id/botCard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cardTitle3"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="11dp"
+                        android:text="@string/toDoTemp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/cardText3"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle3"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/announcementText"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cardTitle3"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:scaleX="1.7"
+                        android:scaleY="1.7"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

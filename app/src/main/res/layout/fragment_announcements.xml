@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Announcements">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/topCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="17dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/dulogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/du"></androidx.appcompat.widget.AppCompatImageView>
+
+                    <TextView
+                        android:id="@+id/cardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dulogo"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/titlePlaceHolder"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/cardText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="@string/announcementText"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/midCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topCard"
+                android:layout_margin="17dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/dulogo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ducampus"></androidx.appcompat.widget.AppCompatImageView>
+
+                    <TextView
+                        android:id="@+id/cardTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dulogo1"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/titlePlaceHolder"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/cardText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="@string/announcementText"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bottomCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/midCard"
+                android:layout_margin="17dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/dulogo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/du"></androidx.appcompat.widget.AppCompatImageView>
+
+                    <TextView
+                        android:id="@+id/cardTitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dulogo2"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/titlePlaceHolder"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/cardText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="@string/announcementText"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

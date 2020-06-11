@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FSPA</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titlePlaceHolder">Insert Announcement Title Here....</string>
+    <string name="announcementText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="personName">First name, Middle initial, Last name</string>
+    <string name="personTitle">Senate title, Position at du</string>
+    <string name="toDoTemp">Insert To-Do Title Here...</string>
+</resources>

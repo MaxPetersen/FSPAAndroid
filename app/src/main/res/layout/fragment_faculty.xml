@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/topCard"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="17dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cardTitle"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="11dp"
+                        android:text="@string/personName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/cardText"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/personTitle"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/dulogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_toRightOf="@+id/cardTitle"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile1"></androidx.appcompat.widget.AppCompatImageView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/midCard"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="17dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="10dp"
+                android:layout_below="@+id/topCard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cardTitle1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="11dp"
+                        android:text="@string/personName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/cardText1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle1"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/personTitle"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/dulogo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_toRightOf="@+id/cardTitle1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/abdul"></androidx.appcompat.widget.AppCompatImageView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/botCard"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="17dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="10dp"
+                android:layout_below="@+id/midCard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cardTitle2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="11dp"
+                        android:text="@string/personName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/cardText2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle2"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/personTitle"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/dulogo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_toRightOf="@+id/cardTitle2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/manuel"></androidx.appcompat.widget.AppCompatImageView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lowCard"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="17dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="10dp"
+                android:layout_below="@id/botCard">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cardTitle3"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="11dp"
+                        android:text="@string/personName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/cardText3"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTitle3"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/personTitle"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/dulogo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_toRightOf="@+id/cardTitle3"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile1"></androidx.appcompat.widget.AppCompatImageView>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
